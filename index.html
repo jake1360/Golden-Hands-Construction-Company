@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden hands</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #666;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .catalog-item {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 0.7rem 1.5rem;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Golden hands</h1>
+    <p>Everything with your own hands!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section id="home">
+    <h2>Main</h2>
+    <p>Welcome to our company website! Here you will find information about our products and services.</p>
+  </section>
+
+  <section id="about">
+    <h2>About us</h2>
+    <p>Our company provides high-quality services and products, focusing on the customer. We value trust and work towards results.</p>
+  </section>
+
+  <section id="catalog">
+    <h2>Catalog</h2>
+    <div class="catalog-grid">
+      <div class="catalog-item">Товар 1</div>
+      <div class="catalog-item">Товар 2</div>
+      <div class="catalog-item">Товар 3</div>
+      <div class="catalog-item">Товар 4</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacts</h2>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Название Компании. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
